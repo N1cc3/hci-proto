@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Diet App</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="master.js" charset="utf-8"></script>
+  </head>
+  <body class="body">
+    <div id="top-bar" class="top-bar">
+      <div id="user-icon" class="user-icon">
+        <img src="user-icon.svg" alt="">
+      </div>
+      <div id="tabs" class="tabs">
+        <div id="tab-btn-add-meal" class="tab add-meal" onclick="addMealTabClicked(this)" selected>
+          Add Meal
+        </div>
+        <div id="tab-btn-create-meal" class="tab create-meal" onclick="createMealTabClicked(this)">
+          Create Meal
+        </div>
+        <div id="tab-btn-stats" class="tab stats" onclick="statsTabClicked(this)">
+          Stats
+        </div>
+      </div>
+    </div>
+    <div id="tab-contents" class="tab-contents">
+      <div id="tab-content-add-meal" class="tab-content add-meal" selected>
+        <div class="meals">
+        <div class="meal">
+          <div class="meal-header">
+            Spaghetti Bolognese
+          </div>
+          <div class="meal-contents">
+            <div class="meal-content">
+              <div class="meal-content-name">
+                Minced meat
+              </div>
+              <div class="meal-content-amount">
+                150g
+              </div>
+            </div>
+            <div class="meal-content">
+              <div class="meal-content-name">
+                Pasta
+              </div>
+              <div class="meal-content-amount">
+                200g
+              </div>
+            </div>
+            <div class="meal-content">
+              <div class="meal-content-name">
+                Mashed tomatoes
+              </div>
+              <div class="meal-content-amount">
+                150g
+              </div>
+            </div>
+            <div class="meal-content">
+              <div class="meal-content-name">
+                Onion
+              </div>
+              <div class="meal-content-amount">
+                50g
+              </div>
+            </div>
+          </div>
+        </div>
+          <div class="meal">
+            <div class="meal-header">
+              Caesar Salad
+            </div>
+            <div class="meal-contents">
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Roman salad
+                </div>
+                <div class="meal-content-amount">
+                  150g
+                </div>
+              </div>
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Chicken
+                </div>
+                <div class="meal-content-amount">
+                  100g
+                </div>
+              </div>
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Croutons
+                </div>
+                <div class="meal-content-amount">
+                  25g
+                </div>
+              </div>
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Parmesan
+                </div>
+                <div class="meal-content-amount">
+                  50g
+                </div>
+              </div>
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Salad dressing
+                </div>
+                <div class="meal-content-amount">
+                  50g
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="meal">
+            <div class="meal-header">
+              Oatmeal with berries
+            </div>
+            <div class="meal-contents">
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Oatmeal
+                </div>
+                <div class="meal-content-amount">
+                  150g
+                </div>
+              </div>
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Strawberries
+                </div>
+                <div class="meal-content-amount">
+                  40g
+                </div>
+              </div>
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Blueberries
+                </div>
+                <div class="meal-content-amount">
+                  30g
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="meal">
+            <div class="meal-header">
+              Ice cream
+            </div>
+            <div class="meal-contents">
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Ice cream
+                </div>
+                <div class="meal-content-amount">
+                  150g
+                </div>
+              </div>
+              <div class="meal-content">
+                <div class="meal-content-name">
+                  Banana
+                </div>
+                <div class="meal-content-amount">
+                  100g
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="tab-content-create-meal" class="tab-content create-meal">
+        create-meal-tab
+      </div>
+      <div id="tab-content-stats" class="tab-content stats">
+        stats-tab
+      </div>
+    </div>
+  </body>
+</html>

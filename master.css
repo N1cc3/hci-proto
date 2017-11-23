@@ -1,0 +1,123 @@
+.body {
+  font-size: 56px;
+  font-family: sans-serif;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  height: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.tab-contents {
+  height: calc(100vh - 150px);
+}
+
+.user-icon {
+  height: 150px;
+  width: 150px;
+}
+
+.user-icon > img {
+  height: 100%;
+  width: 100%;
+}
+
+.tabs {
+  flex-grow: 5;
+  display: flex;
+  flex-direction: row;
+}
+
+.tab {
+  flex-grow: 1;
+  border: solid black 2px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab[selected] {
+  border-bottom-style: none;
+}
+
+.tab.add-meal {
+  background-color: lightgreen;
+}
+
+.tab.create-meal {
+  background-color: lightblue;
+}
+
+.tab.stats {
+  background-color: lightyellow;
+}
+
+.tab-content {
+  display: none;
+  height: 100%;
+  flex-grow: 1;
+}
+
+.tab-content[selected] {
+  display: block;
+}
+
+.tab-content.add-meal {
+  background-color: lightgreen;
+  padding: 10px;
+}
+
+.tab-content.create-meal {
+  background-color: lightblue;
+}
+
+.tab-content.stats {
+  background-color: lightyellow;
+}
+
+.meals {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+
+.meal {
+  width: calc(50% - 2 * 2px - 5px * 2 - 5px * 2);
+  border: solid black 2px;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  background-color: white;
+}
+
+.meal-header {
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.meal-contents {
+
+}
+
+.meal-content {
+  font-size: 0.5em;
+  display: flex;
+  flex-direction: row;
+}
+
+.meal-content-name {
+  flex-grow: 1;
+}
+
+.meal-content-amount {
+
+}
