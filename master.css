@@ -15,7 +15,9 @@
 }
 
 .tab-contents {
-  height: calc(100vh - 150px);
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .user-icon {
@@ -61,18 +63,23 @@
 }
 
 .tab-content {
-  display: none;
   height: 100%;
   flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.tab-content:not([selected]) {
+  display: none;
 }
 
 .tab-content[selected] {
-  display: block;
+  display: flex;
 }
 
 .tab-content.add-meal {
   background-color: lightgreen;
-  padding: 10px;
 }
 
 .tab-content.create-meal {
@@ -119,5 +126,68 @@
 }
 
 .meal-content-amount {
+  color: darkgrey;
+}
 
+.create-meal > input {
+  font-size: 0.9em;
+  border: none;
+  border-radius: 0.2em;
+}
+
+.ingredients {
+  flex-grow: 1;
+}
+
+.add-ingredient-btn {
+  font-size: 0.8em;
+  margin-top: 0.2em;
+  padding: 0.1em;
+  border: solid darkgreen 2px;
+  border-radius: 0.4em;
+  background-color: lightgreen;
+}
+
+.ingredient {
+  margin-top: 0.2em;
+  padding: 0.1em;
+  border: solid black 2px;
+  border-radius: 0.4em 0;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+}
+
+input.ingredientName {
+  font-size: 0.9em;
+  flex-grow: 1;
+  border: none;
+}
+
+input.ingredientAmount {
+  font-size: 0.9em;
+  border: none;
+  width: 100%;
+  text-align: right;
+}
+
+.create-meal-btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.create-meal-btns > button {
+  margin: 0.1em;
+  font-size: 1em;
+  border: solid black 2px;
+  border-radius: 0.2em;
+}
+
+.add-template {
+  background-color: skyblue;
+}
+
+.eaten {
+  background-color: lightgreen;
 }

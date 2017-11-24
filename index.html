@@ -24,6 +24,7 @@
       </div>
     </div>
     <div id="tab-contents" class="tab-contents">
+
       <div id="tab-content-add-meal" class="tab-content add-meal" selected>
         <div class="meals">
         <div class="meal">
@@ -168,12 +169,28 @@
           </div>
         </div>
       </div>
+
       <div id="tab-content-create-meal" class="tab-content create-meal">
-        create-meal-tab
+        <input type="text" name="meal-name" value="" placeholder="Meal name">
+        <div id="ingredients" class="ingredients">
+          <div id="add-ingredient-btn" class="add-ingredient-btn" onclick="addIngredientClicked(this)">
+            Add ingredient
+          </div>
+        </div>
+        <div class="create-meal-btns">
+          <button class="add-template" onclick="addTemplateClicked(this)">
+            Add template
+          </button>
+          <button class="eaten" onclick="eatenClicked(this)">
+            Eaten!
+          </button>
+        </div>
       </div>
+
       <div id="tab-content-stats" class="tab-content stats">
         stats-tab
       </div>
+
     </div>
   </body>
 </html>
